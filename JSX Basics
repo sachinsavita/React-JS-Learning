@@ -54,3 +54,23 @@ Hello, Sachin Savita!
 Hello, Sachin Savita!
 Your lucky number is 9
 ##############      Result of Above Code      ################
+
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const name = "Sachin Savita";
+const currentYear = new Date().getFullYear();
+ReactDOM.render(
+  <div>
+    <p>Created by {name}</p> 
+    <p>Copyright {currentYear}</p>
+  </div>,
+  document.getElementById("root")
+
+
+##############      Result of Above Code      ################
+Created by Sachin Savita
+
+Copyright 2023
+##############      Result of Above Code      ################
