@@ -1,0 +1,28 @@
+//Initial text of a simple components
+
+//Mandatory Imports
+import React from "react";
+import ReactDOM from "react-dom";
+
+//Variables
+let x = Math.floor((Math.random() * 10));
+var fname = "Sachin";
+var lname = "Savita";
+
+//React Component
+ReactDOM.render(
+  <div>
+    <h1>Hello, {fname +" "+lname}!</h1>
+    <h1>Hello, {fname} {lname}!</h1>
+    <h1>Hello, {`${fname} ${lname}`}!</h1>
+    <p>Your lucky number is {x}</p>
+  </div>,
+  document.getElementById("root")
+);
+
+
+##############      Result of Above Code      ################
+Hello, Sachin Savita!
+Hello, Sachin Savita!
+Hello, Sachin Savita!
+Your lucky number is 9
