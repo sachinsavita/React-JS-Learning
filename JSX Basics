@@ -1,5 +1,32 @@
 //Initial text of a simple components
 
+
+//Mandatory Imports
+import React from "react";
+import ReactDOM from "react-dom";
+
+//React Component
+ReactDOM.render(
+  <div>
+    <h1>My favorite foods.</h1>
+    <ul>
+      <li>Apples</li>
+      <li>Mango</li>
+      <li>Banana</li>
+    </ul>
+    <p>This is a paragraph.</p>
+  </div>,
+  document.getElementById("root")
+);
+
+##############      Result of Above Code      ################
+My favorite foods.
+*Apples
+*Mango
+*Banana
+This is a paragraph.
+##############      Result of Above Code      ################
+
 //Mandatory Imports
 import React from "react";
 import ReactDOM from "react-dom";
@@ -26,3 +53,4 @@ Hello, Sachin Savita!
 Hello, Sachin Savita!
 Hello, Sachin Savita!
 Your lucky number is 9
+##############      Result of Above Code      ################
