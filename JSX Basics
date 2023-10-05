@@ -105,3 +105,40 @@ ReactDom.render(
 ##############      Result of Above Code      ################
 Hi my name is Angela Yu.  //Inside 1px Border , Text color = blue
 ##############      Result of Above Code      ################
+
+
+
+
+
+import React from "react";
+import ReactDom from "react-dom";
+
+
+//Customizing Date Time
+const date = new Date(2023,1,1,19);
+//Current Time Hour
+const currentTime = date.getHours();
+
+//Variable
+let greeting;
+const customeStyle={
+  color: ""
+}
+if (currentTime < 12) {
+    greeting = "Good Morning!"
+    customeStyle.color="red"
+} else if (currentTime >= 12 && currentTime < 18) {
+  greeting = "Good Afternoon!"
+  customeStyle.color="green"
+} else {
+  greeting = "Good Evening!"
+  customeStyle.color="blue"
+}
+
+ReactDom.render( 
+<h1 className="heading" style={customeStyle}>{greeting}</h1>
+,document.getElementById("root"));
+
+##############      Result of Above Code      ################
+Hare According to the time greeting(Good Morning, AFternoon, evening) is coming with different color
+##############      Result of Above Code      ################
