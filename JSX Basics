@@ -74,3 +74,34 @@ Created by Sachin Savita
 
 Copyright 2023
 ##############      Result of Above Code      ################
+
+
+
+// var React=require("react");
+// var ReactDom=require("react-dom");
+import React from "react";
+import ReactDom from "react-dom";
+
+const customStyle = 
+{
+  color:"red",
+  fontSize:"20px",
+  border:"1px solid black"
+};
+
+const customStyle1 = 
+{
+  color:"green",
+  fontSize:"30px",
+  border:"2px solid black"
+};
+
+customStyle.color="blue";
+
+ReactDom.render( 
+<h1 style={customStyle}>Hi my name is Angela Yu.</h1>
+,document.getElementById("root"));
+
+##############      Result of Above Code      ################
+Hi my name is Angela Yu.  //Inside 1px Border , Text color = blue
+##############      Result of Above Code      ################
