@@ -1,0 +1,100 @@
+#######  Index.html   #####
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="style icon" href="public/styles.css" />
+    <title>Keeper App</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+
+
+
+
+############# index.js   #############
+
+import React from "react";
+import ReactDom from "react-dom";
+import App from "./components/App.jsx";
+
+
+ReactDom.render(
+<App />, document.getElementById("root")
+);
+
+
+
+
+######   App.jsx    #######
+
+import React from "react";
+import Header from "./Header.jsx";
+import Footer from "./Footer.jsx";
+import Note from "./Note.jsx";
+function App() {
+  return (
+    <div>
+      <Header />
+      <Note />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+#####  Header.jsx   ######
+import React from "react";
+
+function Header() {
+  return (
+    <header>
+      <h1>Keeper</h1>
+    </header>
+  );
+}
+export default Header;
+
+
+######  Note.jsx    ######
+
+import React from "react";
+
+function Note() {
+  return (
+    <div className="note">
+      <h1>This is title</h1>
+      <p>This is the content</p>
+    </div>
+  );
+}
+export default Note;
+
+
+######  Footer.jsx    ######
+import React from "react";
+const year = new Date().getFullYear();
+function Footer() {
+  return (
+    <footer>
+      <p>Copy Right {year}</p>
+    </footer>
+  );
+}
+export default Footer;
